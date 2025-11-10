@@ -1,8 +1,8 @@
 # scripts/03-conditional-access-policy.ps1
 
-# Créer une politique d'accès conditionnel
+# Creer une politique d'acces conditionnel
 $policy = @{
-    displayName = "Restriction géographique - USS Enterprise"
+    displayName = "Restriction geographique - USS Enterprise"
     state = "enabled"
     conditions = @{
         locations = @{

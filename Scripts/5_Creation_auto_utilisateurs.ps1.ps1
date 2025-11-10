@@ -1,6 +1,6 @@
 # scripts/05-create-users.ps1
 
-# Fonction pour créer un utilisateur
+# Fonction pour creer un utilisateur
 function New-EnterpriseCrewMember {
     param(
         [string]$FirstName,
@@ -13,13 +13,13 @@ function New-EnterpriseCrewMember {
     $userPrincipalName = "$($FirstName.ToLower()).$($LastName.ToLower())@uss-enterprise.com"
     $mailNickname = "$($FirstName.ToLower())$($LastName.ToLower())"
     
-    # Générer un mot de passe temporaire
+    # Generer un mot de passe temporaire
     $passwordProfile = @{
         Password = "Starfleet2024!"
         ForceChangePasswordNextSignIn = $true
     }
     
-    # Créer l'utilisateur
+    # Creer l'utilisateur
     $newUser = New-MgUser -DisplayName $displayName `
         -UserPrincipalName $userPrincipalName `
         -MailNickname $mailNickname `
@@ -28,7 +28,7 @@ function New-EnterpriseCrewMember {
         -Department $department `
         -JobTitle $rank
     
-    Write-Host "Utilisateur créé : $displayName" -ForegroundColor Green
+    Write-Host "Utilisateur cree : $displayName" -ForegroundColor Green
     return $newUser
 }
 

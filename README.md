@@ -27,9 +27,7 @@ ad-enterprise/
 ├── documentation/
 │   ├── installation.md
 │   ├── configuration.md
-│   └── tests.md
-├── tests/
-│   └── test-results/
+│ 
 └── README.md
 ```
 
@@ -63,7 +61,8 @@ Install-Module -Name Microsoft.Graph -Force
 Voir le dossier `tests/` pour les procédures de test détaillées.
 
 ## 👥 Contributeurs
-- [Votre Nom]
+
+- Tom Ribero 
 
 ## 📄 Licence
 MIT

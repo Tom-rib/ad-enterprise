@@ -4,7 +4,7 @@
 $role = (Get-MgServicePrincipal -ServicePrincipalId $repairSP.Id).AppRoles | 
     Where-Object {$_.Value -eq "Engineer"}
 
-# Assigner le rôle aux ingénieurs
+# Assigner le rôle aux ingenieurs
 $engineers = Get-MgGroupMember -GroupId $engineeringTeam.Id
 
 foreach ($engineer in $engineers) {
@@ -14,5 +14,5 @@ foreach ($engineer in $engineers) {
         -ResourceId $repairSP.Id `
         -AppRoleId $role.Id
     
-    Write-Host "Rôle Engineer assigné à $($engineer.DisplayName)" -ForegroundColor Green
+    Write-Host "Rôle Engineer assigne a $($engineer.DisplayName)" -ForegroundColor Green
 }

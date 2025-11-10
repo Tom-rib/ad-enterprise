@@ -1,0 +1,20 @@
+﻿{
+    "TenantSettings":  {
+                           "TenantId":  "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+                           "TenantName":  "uss-enterprise.onmicrosoft.com",
+                           "DefaultDomain":  "uss-enterprise.com"
+                       },
+    "Security":  {
+                     "RequireMFA":  true,
+                     "AllowedLocations":  [
+                                              "France",
+                                              "United States"
+                                          ]
+                 },
+    "Groups":  {
+                   "MedicalTeam":  "Equipe Medicale",
+                   "EngineeringTeam":  "Equipe d\u0027Ingenierie",
+                   "CommandTeam":  "Equipe de Commandement",
+                   "ExplorationTeam":  "Equipe d\u0027Exploration"
+               }
+}

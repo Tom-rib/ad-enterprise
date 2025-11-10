@@ -1,6 +1,6 @@
 # scripts/14-create-alerts.ps1
 
-# Créer une alerte pour les connexions depuis des emplacements non reconnus
+# Creer une alerte pour les connexions depuis des emplacements non reconnus
 $alertRule = New-AzMetricAlertRuleV2 `
     -ResourceGroupName "USS-Enterprise-RG" `
     -Name "UnauthorizedLocationAlert" `
@@ -10,4 +10,4 @@ $alertRule = New-AzMetricAlertRuleV2 `
     -Condition $condition `
     -ActionGroupId $actionGroup.Id
 
-Write-Host "Règle d'alerte créée : UnauthorizedLocationAlert" -ForegroundColor Green
+Write-Host "Regle d'alerte cree : UnauthorizedLocationAlert" -ForegroundColor Green
