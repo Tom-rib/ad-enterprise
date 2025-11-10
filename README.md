@@ -27,6 +27,12 @@ ad-enterprise/
 ├── documentation/
 │   ├── installation.md
 │   ├── configuration.md
+├───├── mémo_commandes.md /
+│           ├── 00_index.md
+│           ├── 00_quickstart.md
+│           ├── 01_création_tenant.md
+│           ├── 02_connexion_powershell.md
+│           └── ...
 │ 
 └── README.md
 ```
