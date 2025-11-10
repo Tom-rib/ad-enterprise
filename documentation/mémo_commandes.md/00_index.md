@@ -425,7 +425,7 @@ Get-MgIdentityConditionalAccessPolicy | Select-Object DisplayName, State
 
 ## 🚀 COMMENCER MAINTENANT
 
-**[➡️ Ouvrir le Guide 01 - Création du Tenant](./01-Creation-Tenant.md)**
+**[➡️ Ouvrir le Guide 01 - Création du Tenant](./01_création_tenant.md)**
 
 ---
 
